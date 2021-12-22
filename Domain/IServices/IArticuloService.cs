@@ -11,6 +11,8 @@ namespace ReciApis.Domain.IServices
 
         List<Articulo> Obtener();
 
+        string ObtenerArticuloId(int id);
+
         Task EditarProducto(Articulo articulo);
 
         Task EliminarProducto(int articuloId);

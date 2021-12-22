@@ -37,7 +37,15 @@ namespace ReciApis.Controllers
         {
             var resultado = _articuloService.Obtener();
 
-            return _articuloService.Obtener();
+            return resultado;
+        }
+
+        [HttpGet]
+        [Route("{id}")]
+        public string GetId( int id)
+        {
+            var articuloId = _articuloService.ObtenerArticuloId(id);
+            return articuloId;
         }
 
 

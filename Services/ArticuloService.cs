@@ -45,5 +45,10 @@ namespace ReciApis.Services
         {
             return _articuloRepository.ListaUMedida();
         }
+
+        public string ObtenerArticuloId(int id)
+        {
+            return _articuloRepository.ObtenerArticuloId(id);
+        }
     }
 }

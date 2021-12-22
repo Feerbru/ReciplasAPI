@@ -139,5 +139,11 @@ namespace ReciApis.Persistence.Repository
             }
         }
 
+        public string ObtenerArticuloId(int id)
+        {
+            var resultado = _context.Articulo.Where(busqueda => busqueda.Id == id).Single().ToString();
+
+            return resultado;
+        }
     }
 }
